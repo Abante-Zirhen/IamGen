@@ -1,0 +1,123 @@
+@import url('https://fonts.googleapis.com/css2?family=Michroma&display=swap');
+
+body
+{
+    padding: 0px;
+    margin: 0px;
+    font-family: 'Michroma', sans-serif;
+   
+    
+   
+}
+
+.Main-Container
+{
+   display: flex;
+   flex-direction: column;
+
+   
+    
+}
+
+.Logo-Container 
+{
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+
+    background-image: linear-gradient(to right top, 
+    #070506, #140e13, #1b141d, #201a29, 
+    #222135, #1f283e, #1a2f47, #0f364e, 
+    #073e51, #0a4551, #154c50, #23524f);
+    
+   
+
+}
+
+.Subject
+{
+  
+}
+
+.Container-Name 
+{
+    display: flex;
+    flex-direction: column;
+    
+}
+
+p{
+    text-align: center;
+    
+}
+
+/* Logo Letter F And Letter L */
+.Letter-F
+{
+    width: 150px;
+    height: 150px;
+    
+    
+    
+     /* Animation Letter-F */
+     animation: Slide-Animation-F 2s ease-in 1s forwards;
+    
+}
+.Letter-L
+{
+    width: 150px;
+   height: 150px;
+
+    /* Animation Letter-L */
+    
+
+   animation: Slide-Animation-L  2s ease-in 1s forwards ;
+    
+
+   
+}
+@keyframes Slide-Animation-F
+{
+ 0%
+ {
+    transform: translateX(0)
+ }
+ 50%
+ {
+    transform: translateX(60px)
+ }
+ 100%
+ {
+    transform: translateX(60px) 
+ }
+
+}
+
+@keyframes Slide-Animation-L 
+{
+   0%
+   {
+    transform: translateX(0) rotatey(0);
+   }
+   50%
+   {
+    transform: translateX(-60px) rotatey(180deg);
+   }
+   100%
+   {
+    transform: translateX(-60px) rotatey(180deg);
+    
+   }
+   
+}
+
+
+
+
+/* Animation-List */
+
+
