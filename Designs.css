@@ -1,5 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Michroma&display=swap');
 
+
 body
 {
     padding: 0px;
@@ -21,6 +22,7 @@ body
 
 .Logo-Container 
 {
+  
     position: absolute;
     height: 100%;
     width: 100%;
@@ -29,17 +31,19 @@ body
     align-items: center;
     flex-direction: column;
 
-    background-image: linear-gradient(to right top, 
-    #070506, #140e13, #1b141d, #201a29, 
-    #222135, #1f283e, #1a2f47, #0f364e, 
-    #073e51, #0a4551, #154c50, #23524f);
+    background-image: radial-gradient(circle, #ffffff, 
+    #e9e9ea, #d2d2d6, #bcbdc2, #a6a8ae,
+     #93969c, #81848a, #6f7379, #5d6065,
+     #4b4e51, #3a3c3e, #2a2b2c);
     
-   
+    animation: Fade-In 2s ease-in 0s forwards, Fade-Out 3s ease-in 3s forwards;
 
 }
 
+
 .Subject
 {
+   animation:  Fading 2s ease-in-out 1s forwards;
   
 }
 
@@ -56,7 +60,7 @@ p{
 }
 
 /* Logo Letter F And Letter L */
-.Letter-F
+.Letter-F 
 {
     width: 150px;
     height: 150px;
@@ -64,9 +68,12 @@ p{
     
     
      /* Animation Letter-F */
-     animation: Slide-Animation-F 2s ease-in 1s forwards;
+     animation: Slide-Animation-F 2s ease-in 1s forwards, Fading 2s ease-in 0s forwards;
+     
     
 }
+
+
 .Letter-L
 {
     width: 150px;
@@ -75,11 +82,15 @@ p{
     /* Animation Letter-L */
     
 
-   animation: Slide-Animation-L  2s ease-in 1s forwards ;
-    
-
+   animation: Slide-Animation-L  2s ease-in 1s forwards , Fading 2s ease-in 0s forwards; 
    
 }
+
+
+
+/* Animation-List */
+
+/* LOgo F Animation */
 @keyframes Slide-Animation-F
 {
  0%
@@ -97,6 +108,7 @@ p{
 
 }
 
+/* Logo L Animation */
 @keyframes Slide-Animation-L 
 {
    0%
@@ -115,9 +127,86 @@ p{
    
 }
 
+/* Title Animation */
+@keyframes Title-Animation
+{
+   0%
+   {
+      transform: translateY(100px);
+   }
+   50%
+   {
+      transform: translateY(50px);
+   }
+   100%
+   {
+      transform: translateY(0px);
+   }
+  
+}
+/* Fading  Animation*/
+@keyframes Fading
+{
+   0%{
+      opacity: 1;
+     
+   }
+   50%
+    {
+      opacity: 1;
+      color: whitesmoke;
+      text-shadow: 0px -1px 4px rgb(54, 54, 54)
+    }
+    100%
+    {
+      opacity: 1;
+    }
+}
+@keyframes Morph-Transition 
+{
+    0%
+    {
+      transform: translate(0px); 
+    }
+    50%
+    {
+      transform: translatex(650px) translatey(-250px);
+      width: 100px;
+      height: 100px;
+    }
+    100%
+    {
+      transform: translatex(650px) translatey(-250px);
+      width: 100px;
+      height: 100px;
+    }
+}
+@keyframes Fade-In
+{
+   from
+   {
+      opacity: 0;
+   }
+   to
+   {
+           opacity: 1;
+   }
+}
+@keyframes Fade-Out
+{
+   from
+   {
+      opacity: 1;
+   }
+   to
+   {
+           opacity: 0;
+   }
+}
 
 
 
-/* Animation-List */
+
+
 
 

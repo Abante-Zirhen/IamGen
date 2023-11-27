@@ -1,0 +1,701 @@
+@import url('https://fonts.googleapis.com/css2?family=Michroma&family=Poppins:wght@200&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Michroma&family=Poppins:wght@200;300&display=swap');
+
+
+body
+{
+   margin: 0px;
+   padding: 0px;
+
+   animation: fade-in 2s ease 0s forwards;
+  
+   background-color: #000000;
+   
+}
+
+
+
+.Intro-Container
+{
+    
+ height: 100vh;
+ 
+ background-image: linear-gradient(to top, 
+ #000000, #000000, 
+ #000000, #000000, 
+ #000000, #050505,
+ #0a0a0a, #0f0f0f,
+ #171717, #1d1d1e,
+ #232425, #2a2b2c);
+ position: relative;
+
+ animation: Move-Out  .5s ease-out 2s forwards;
+    
+ 
+   
+}
+.Intro
+{
+    font-family: 'Michroma', sans-serif;
+    font-family: 'Poppins', sans-serif;
+    font-weight: bold;
+    
+    font-size: 44px;
+    text-align: center;
+    
+    fill-opacity: 0;
+    stroke-width: .2px;
+    stroke-dasharray: 4500;
+    
+    stroke: #45A29E;
+
+    animation: strokeFadeOff 8s ease-in 0s forwards, Move-Out-Text 1s ease 2s forwards; 
+    
+    
+}
+
+.Container-Text
+{
+    display: flex;
+    height: 100vh;
+    width: 1024px;
+    justify-content: center;
+    margin: auto;
+    align-items: center;
+}
+
+
+
+/* sample */
+.Home-Page-Container
+{
+    height: 100vh;
+    width: 100%;
+    z-index: -1;
+     position: absolute;
+    top: 0;
+    
+background-image: linear-gradient(to top, 
+ #000000, #000000, 
+ #000000, #000000, 
+ #000000, #050505,
+ #0a0a0a, #0f0f0f,
+ #171717, #1d1d1e,
+ #232425, #2a2b2c);
+    
+    
+}
+
+@keyframes fade-in
+{
+    from
+    {
+        opacity: 0;
+      
+    }
+    to
+    {
+        opacity: 1;
+        
+    }
+}
+
+@keyframes fade-out
+{
+    from
+    {
+        opacity: 1;
+    }
+    to
+    {
+        opacity: 0;
+    }
+}
+
+@keyframes strokeFadeOff {
+   0%
+   {
+      stroke-dashoffset: 4500;
+   }
+   100%
+   {
+      stroke-dashoffset: 10;
+   }
+}
+
+@keyframes Move-Out 
+{
+   0%
+   {
+     height: 100vh;
+     border-bottom-right-radius: 0;
+     border-bottom-left-radius: 0; 
+   }  
+   100%
+   {
+    height: 0vh;
+    border-bottom-right-radius: 50%;
+    border-bottom-left-radius: 50%; 
+   }  
+}
+
+@keyframes Move-Out-Text 
+{
+   0%
+   {
+     transform: translatey(0px);
+   }  
+   100%
+   {
+    
+    transform: translatey(-500px);
+   }  
+   
+   
+}
+
+@keyframes Scroll-Right 
+{
+   from
+   {
+        transform: translateX(0px);
+   }
+   to
+   {
+         transform: translateX(50px);
+   }    
+}
+
+@keyframes Scroll-Left 
+{
+   from
+   {
+        transform: translateX(50px);
+   }
+   to
+   {
+         transform: translateX(0px);
+   }    
+}
+
+/* This is for the Home Page Setting */
+.Home-Page
+{
+    width: 100%;
+    height: 100%;
+     overflow: hidden;
+
+color: #000000;          
+}
+.Section
+{
+    color: #45A29E;
+    font-family: 'Michroma', sans-serif;
+    font-family: 'Poppins', sans-serif;
+    margin-left: 20px;
+    
+    
+}
+.Navigation-Bar
+{
+    margin-top: 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  
+}
+.Button-Container
+{
+    margin-right: 20px;
+    display: flex;
+    width: 200px;
+    justify-content: space-between;
+}
+
+
+
+.Portrait
+{
+    width: 650px;
+    height: 695px;
+    position: absolute;
+    z-index: 0; 
+    bottom: 0;
+    
+    animation: Move-Up 1.5s ease-in 1s forwards,fade-in 3s ease-in 0s forwards;
+    
+    
+    
+} 
+.Portrait-Container
+{   
+    height: 100%;
+    display: flex;
+    align-items: flex-end;
+    justify-content: center;
+    position: relative;
+    overflow: hidden;
+
+ 
+        
+}
+
+.Name
+{
+    color: #45A29E;
+    font-size: 120px;
+    font-family: 'Michroma', sans-serif;
+    font-family: 'Poppins', sans-serif;
+    text-align: center;   
+    z-index: 0; 
+    bottom: 0;
+    position: relative;
+    margin-right: 30px;
+    animation: Move-Up 1.5s ease-in 1s forwards, Move-left 8s ease-in 0s infinite;
+    
+    
+   
+}
+    
+
+
+.move-up {
+   
+   
+      
+}
+/* Scroll Settings */
+@keyframes Scroll-Moveup
+{
+
+       
+}
+
+/* Key Frames for the up animation */
+
+@keyframes Move-Up
+{
+    0%
+    {
+        transform: translateY(300px) ;
+        opacity: 0;
+    }
+    100%
+    {
+        transform: translateY(0px);
+        opacity: 1;
+    }
+}
+
+/* Animation for the ZIRHEN */
+
+@keyframes Move-left
+{
+    0%
+    {
+        transform: translateX(0px),;
+    }
+    50%
+    {
+        transform: translateX(-300px);
+        text-shadow: 3px 3px 2px rgb(0, 0, 0);
+    }
+    100%
+    {
+        transform: translateX(0px);
+    }
+}
+/* Button Settings */
+
+.Btn-Project, .Btn-About, .Btn-Contact
+
+{
+    font-family: 'Poppins', sans-serif;
+    color: #45A29E;
+    background-color: transparent;
+    border: none;
+}
+
+
+/* For About ME setting */
+.About-Container
+{
+
+
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 300px;
+    
+  
+}
+
+.About-Me
+{
+    
+    color: #45A29E;
+    width: 600px; 
+    text-align: center;
+    font-size: 24px;
+      margin-left: 50px;
+    font-family: 'Poppins', sans-serif;
+
+    animation: Scroll-Right  linear both,fade-in linear both ;
+    animation-timeline: View();
+    animation-range: entry 50% cover 50%;
+    
+    
+}
+
+.About-Me-Btn
+{
+
+    --color: black;
+    font-family: inherit;
+    display: inline-block;
+    width: 150px;
+    height: 150px;
+    line-height: 2.5em;
+    margin: 20px;
+    position: relative;
+    overflow: hidden;
+    border: 1px solid var(--color);
+    transition: color .5s;
+    z-index: 1;
+    font-size: 17px;
+    border-radius: 50%;
+    font-weight: 500px;
+    color: var(--color);
+    font-family: 'Poppins', sans-serif;
+    background-color: #45A29E;
+    border: transparent;
+    margin-right: 150px;
+
+    animation: Scroll-Left  linear both ;
+    animation-timeline: View();
+    animation-range: entry 50% cover 50%;
+
+
+}
+
+.About-Me-Btn:before {
+ content: "";
+ position: absolute;
+ z-index: -1;
+ background: var(--color);
+ height: 200px;
+ width: 200px;
+ border-radius: 50%;
+}
+
+.About-Me-Btn:hover 
+{
+    color: #fff;
+    font-weight: bold;
+}
+
+.About-Me-Btn:before {
+    top: 100%;
+    left: 100%;
+    transition: all .7s;
+   }
+   
+   .About-Me-Btn:hover:before {
+    top: -30px;
+    left: -30px;
+   }
+   
+ 
+
+
+.Liquid-Effect
+{
+      position: absolute;
+      top: 50%;
+      left: 100px;
+      transform: translateY(50%, 50%);
+      width: 100%;
+      height: 100%;
+      background: radial-gradient(circle, #fefefe, transparent 40%);
+      animation: liquid 1.5s infinite;
+}
+
+
+@keyframes liquid 
+{
+  0%
+  {
+   transition: scale(1);
+  } 
+  50%
+  {
+    transition: scale(1.1);
+  } 
+  100%
+  {
+    transition: scale(1);
+  }  
+}
+
+/* Bottom Part */
+
+.Bottom-Container
+{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    height: 100rem;
+   
+}
+
+
+.Activity-Line
+{
+    width: 100%;
+    height: .5px;
+    background-color: #45A29E;
+    margin-top: 50px;
+
+    animation: fade-in  linear both ;
+    animation-timeline: View();
+    animation-range: entry 50% cover 50%;
+    
+}
+
+
+/* Activity Settings */
+.Activity-1
+{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin-top: 50px;
+    margin-right: 50px;
+    padding: 0;
+
+    animation: Scroll-Right  ease-in forwards, fade-in linear both;
+    animation-timeline: View();
+    animation-range: entry 50% cover 50%; 
+}
+
+.Activity-2
+{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin-top: 50px;
+    margin-right: 50px;
+    padding: 0;
+
+    animation: Scroll-Left  ease-in forwards, fade-in linear both;
+    animation-timeline: View();
+    animation-range: entry 50% cover 50%; 
+}
+.Activity-3
+{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin-top: 50px;
+    margin-right: 50px;
+    padding: 0;
+
+    animation: Scroll-Right  ease-in forwards, fade-in linear both;
+    animation-timeline: View();
+    animation-range: entry 50% cover 50%; 
+}
+.Activity-4
+{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin-top: 50px;
+    margin-right: 50px;
+    padding: 0;
+
+    animation: Scroll-Left  ease-in forwards, fade-in linear both;
+    animation-timeline: View();
+    animation-range: entry 50% cover 50%; 
+}
+.Activity-5
+{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin-top: 50px;
+    margin-right: 50px;
+    padding: 0;
+
+    animation: Scroll-Right  ease-in forwards, fade-in linear both;
+    animation-timeline: View();
+    animation-range: entry 50% cover 50%; 
+}
+
+.Activity-6
+{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin-top: 50px;
+    margin-right: 50px;
+    padding: 0;
+
+    animation: Scroll-Left ease-in forwards, fade-in linear both;
+    animation-timeline: View();
+    animation-range: entry 50% cover 50%; 
+}
+
+.Final-Project
+{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin-top: 50px;
+    margin-right: 50px;
+    padding: 0;
+
+    animation: Scroll-Right  ease-in forwards, fade-in linear both;
+    animation-timeline: View();
+    animation-range: entry 50% cover 50%; 
+}
+
+
+
+
+
+
+
+
+.Activity-1-About, .Activity-2-About, .Activity-3-About, .Activity-4-About, .Activity-5-About, .Activity-6-About, .Activity-7-About, .Final-Project
+{
+    font-family: 'Poppins', sans-serif;
+    color: white;
+    text-align: center;
+    font-size: 20px;
+
+}
+.Act-1
+{
+    height: 300px;
+    width: 300px;
+   
+    border-radius: 69px;
+   
+    background: rgba(255,255,255,0.1);
+   -webkit-backdrop-filter: blur(1px);
+    backdrop-filter: blur(1px);
+    border: 1px solid rgba(255,255,255,0.05);
+
+    
+    
+   
+
+
+}
+
+
+.Act-3
+{
+    height: 300px;
+    width: 300px;
+    border-radius: 54px;
+    background: rgba(255,255,255,0.1);
+    -webkit-backdrop-filter: blur(1px);
+    backdrop-filter: blur(1px);
+    border: 1px solid rgba(255,255,255,0.05);
+}
+
+.Act-4,.Act-5,.Act-6
+{
+    height: 300px;
+    width: 300px;
+    border-radius: 54px;
+   
+    background: rgba(255,255,255,0.1);
+    -webkit-backdrop-filter: blur(1px);
+    backdrop-filter: blur(1px);
+    border: 1px solid rgba(255,255,255,0.05);
+}
+
+.Activity-Container
+{
+    margin-top: 0px;
+ 
+    
+}
+
+.Bottom-Footer
+{
+    margin-top: 300px;
+    background-color: #45A29E;
+    width: 300px;
+    height: 100px;
+    display: flex;
+    justify-content: center;
+
+    
+    
+}
+
+.Act-Proj-Text
+{
+    
+}
+.Act-Text
+{
+ color: #66FCF1;
+ font-family: 'Poppins', sans-serif;
+ font-size: 24px;
+ text-align: center;
+ margin-top: 300px;
+ 
+}
+.Img-Footer
+{
+   display: flex;
+   width: 100%;
+   justify-content: flex-start;
+}
+.Bottom-Footer-Container
+{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+    
+}
+
+.Bottom-Footer
+{
+    width: 100%;
+}
+
+.Fb
+{
+    margin-right: 5px;
+   width: 40px;
+   height: 40px;
+}
+.Ig
+{
+    margin-right: 5px;
+   width: 45px;
+   height: 43px;
+}
+.Gm
+{
+    margin-left: 5px;
+   width: 45px;
+   height: 43px;
+}
+.Act-Text
+{
+
+    animation: fade-in  ease-in both ;
+    animation-timeline: View();
+    animation-range: entry 50% cover 50%;
+
+}
+/* Key-Frames for e=scrolling */
+
