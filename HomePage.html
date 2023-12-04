@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=  , initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="HomePage.css">
     <script src="Script1.js"> </script>
     <title>Document</title> 
@@ -23,15 +23,15 @@
                             <p class="Section">BSIT 3D-G1</p>
                            
                         <div class="Button-Container">
-                            <input class="Btn-Project" type="button" value="Project">
-                            <input class="Btn-About" type="button" value="About">
-                            <input class="Btn-Contact" type="button" value="Contact">
+                           <Button onclick="scrollToSection('SectionAct')" class="Btn-Project">Project</Button>
+                           <Button onclick="scrollToSection('SectionAbout')" class="Btn-About">About</Button>
+                           <Button onclick="scrollToSection('SectionContact')" class="Btn-Contact">Contact</Button>
                         </div>
                        
                     
                  </div>
                    <div class="Portrait-Container">
-                    <img class="Portrait" src="Zirhen-Picture.png">
+                    <img class="Portrait" src="/Zirhen-Picture.png">
                    
                   
                    <div class="Name-Container">
@@ -41,9 +41,10 @@
                     </div>
                    </div> 
                 </div>
-                <div class="About-Container">
-                    
-                       <P class="About-Me">
+                <section id="SectionAbout"></section>
+                <div  class="About-Container">
+                     
+                       <P id="TextCon" class="About-Me">
                           
                         Hi! i am 
                         <strong>Abante Zirhen</strong>
@@ -59,8 +60,20 @@
                          <strong>Abante Zirhen</strong>
                          lái zì <Strong>BSIT 3D-G1</Strong> bān.   
                        </P>
+
+                       <P id="TextCon1" class="About-Me1">
+                          
+                        Wǒ shì <Strong>Abante, Zirhen</Strong>, lái zì <Strong>BSIT-3DG1</Strong> bān, wǒ èrshíèr suì le.
+                        Yī míng diànnǎo jìshù àiqíng zhě, wǒ xiǎng chéngwéi
+                        yīgè quánzhú chéngfā shèjìzhě, érqiě wǒ xiǎng yǒu hěn duō péngyǒu
+                        yīnwèi wǒ zǒng juédé zìjǐ hěn jínbù, dàn wǒ xìngfú
+                        yīnwèi wǒ yǐjīng shì gèrénle, zhè ràng wǒ juédé
+                        wǒ xūyào gèngduō de gōngzuò. Wǒ xiànzài méiyǒu chéngjì,
+                        dàn wǒ zhīdào yītiān wǒ huì zhuānzhe tóng yīxiàng xīngxīng
+                        kànzhe chūmóu, chūmóu yītiān néng yǒu gè hǎo de rìzi.
+                       </P>
                       
-                       <button class="About-Me-Btn">
+                       <button onclick="changeText()" class="About-Me-Btn">
                         <span class="Liquid-Effect"></span>
                         About-Me
                        </button>
@@ -74,6 +87,7 @@
                                 <Strong>Activity And Projects</Strong>
                              </P>
                           </Div>
+                          <section id="SectionAct"> </section>
                   <div class="Activity-Container">
                     
                     
@@ -110,7 +124,7 @@
                                 <br>
                                 LISTENING and SPEAKING Activity
                             </P>
-                            <audio class="Act-2" controls play src="AbanteZirhenBSIT3D-FL301-Activity2.mp3"></audio>
+                            <audio class="Act-2" controls play src="/AbanteZirhenBSIT3D-FL301-Activity2.mp3"></audio>
 
                           
 
@@ -125,7 +139,7 @@
                         <div class="Activity-3">
                             
                            
-                             <video class="Act-3" controls play src="AbanteZirhenBSIT3D_FL301_Activity3.mp4"></video>
+                             <video class="Act-3" controls play src="/AbanteZirhenBSIT3D_FL301_Activity3.mp4"></video>
                             <P class="Activity-3-About">
 
                                 <Strong>Activity-3</Strong>
@@ -155,7 +169,7 @@
                                <br>
                                Getting to Know My Best Friend! 
                            </P>
-                           <video class="Act-4" controls play src="AbanteZirhenBSIT3D_FL301_Activity4.mp4"></video>
+                           <video class="Act-4" controls play src="/AbanteZirhenBSIT3D_FL301_Activity4.mp4"></video>
                           
                        </div>
 
@@ -166,7 +180,7 @@
                         <div class="Activity-5">
                             
                            
-                            <video class="Act-5" controls play  src="AbanteZirhen3DG1_Activity5.mp4"></video>
+                            <video class="Act-5" controls play  src="/AbanteZirhen3DG1_Activity5.mp4"></video>
                             <P class="Activity-5-About">
  
                                 <Strong>Activity-5</Strong>
@@ -192,7 +206,7 @@
                             Ordering Foods at McDonald's [Virtual Role-playing Activity]
                             
                         </P>
-                        <video class="Act-6" controls play  src="AbanteZirhenBSIT3DG1_FL301_Activity6.mp4"></video>
+                        <video class="Act-6" controls play  src="/AbanteZirhenBSIT3DG1_FL301_Activity6.mp4"></video>
                     
                     </div>
 
@@ -201,34 +215,27 @@
                      <div class="Activity-7-Container">
 
                         <div class="Final-Project">
-
+                                  <p class="Text-Proj">
                                <Strong>Final Project</Strong>
-
+                               <br>
+                                <Strong>TITLE: <Strong> BYTE BACK 
+                                
+                               
+                                
+                                 </p>
+                                 <p class="Note"> note: Website is hard coded and the maximum file size requirement
+                                    is only 25mb so the quality is reduced from the actual video 
+                                </p>
+                                 <video class="Proj" controls play src="FL_Final_VID.Web.mp4"></video>
 
 
                         </div>
-
+                   
                      </div>
 
                   </div>
                
-                <div class="Bottom-Footer-Container">
-                         
-                    <div class="Bottom-Footer">
-                            
-                               <div class="Img-Footer">
-                                <img class="Fb" src="brand-facebook.svg" alt="">
-                                <img class="Ig" src="brand-instagram.svg" alt="">
-                                <img class="Gm" src="mail.svg" alt="">
-                               </div>
-
-                               <div class="Footer-Text">
-                              
-                               </div>
-                        
-                    </div>
-
-                </div>
+                
                  
             </div>
                               
